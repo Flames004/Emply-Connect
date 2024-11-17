@@ -1,22 +1,49 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
+import { AuthContext } from "../../context/AuthProvider";
 
 const CreateTask = () => {
-  const [taskTitle, setTaskTitle] = useState("");
-  const [taskDescription, setTaskDescription] = useState("");
-  const [taskDate, setTaskDate] = useState("");
+
+  const [userData, setUserData] = useContext(AuthContext)
+
+  const [title, settitle] = useState("");
+  const [description, setdescription] = useState("");
+  const [date, setdate] = useState("");
   const [assignTo, setAssignTo] = useState("");
   const [category, setCategory] = useState("");
 
-  const [Task, setTask] = useState([])
+  const [addTask, setAddTask] = useState({});
 
   const submitHandler = (e) => {
     e.preventDefault();
 
-    setTaskTitle("");
+    setAddTask({
+      title,
+      description,
+      date,
+      category,
+      active: false,
+      newTask: true,
+      failed: false,
+      completed: false,
+    });
+
+    const data = userData
+
+    data.forEach(element => {
+      if(assignTo==element.name){
+        element.tasks.push(addTask)
+        element.taskNumbers.newTask = element.taskNumbers.newTask + 1
+        console.log(element )
+      }
+    });
+
+    setUserData(data)
+
+    settitle("");
     setAssignTo("");
     setCategory("");
-    setTaskDate("");
-    setTaskDescription("");
+    setdate("");
+    setdescription("");
   };
 
   return (
@@ -31,9 +58,9 @@ const CreateTask = () => {
           <div>
             <h3 className="text-sm text-gray-300 mb-0.5">Task Title</h3>
             <input
-              value={taskTitle}
+              value={title}
               onChange={(e) => {
-                setTaskTitle(e.target.value);
+                settitle(e.target.value);
               }}
               type="text"
               placeholder="Make a UI Design"
@@ -43,9 +70,9 @@ const CreateTask = () => {
           <div className="div">
             <h3 className="text-sm text-gray-300 mb-0.5">Date</h3>
             <input
-              value={taskDate}
+              value={date}
               onChange={(e) => {
-                setTaskDate(e.target.value);
+                setdate(e.target.value);
               }}
               className="text-sm py-1 px-2 w-4/5 rounded outline-none bg-transparent border-[1px] border-gray-400 mb-4"
               type="date"
@@ -79,9 +106,9 @@ const CreateTask = () => {
         <div className="w-2/5 flex flex-col items-start">
           <h3 className="text-sm text-gray-300 mb-0.5">Description</h3>
           <textarea
-            value={taskDescription}
+            value={description}
             onChange={(e) => {
-              setTaskDescription(e.target.value);
+              setdescription(e.target.value);
             }}
             className="w-full h-44 text-sm py-2 px-4 rounded outline-none bg-transparent border-[1px] border-gray-400"
             name=""
