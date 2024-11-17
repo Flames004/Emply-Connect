@@ -7,8 +7,9 @@ const employees = [
     password: "1234",
     tasks: [
       {
-        title: "Task 1",
-        description: "Complete the project documentation.",
+        title: "Project Documentation",
+        description:
+          "Complete the documentation for the project to ensure all processes, workflows, and requirements are clearly recorded.",
         date: "2024-11-16",
         category: "Documentation",
         active: true,
@@ -17,8 +18,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 2",
-        description: "Fix bugs in the login module.",
+        title: "Bug Fixes for Login Module",
+        description:
+          "Identify and resolve issues in the login module to ensure a smooth user authentication process.",
         date: "2024-11-15",
         category: "Development",
         active: false,
@@ -27,8 +29,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 3",
-        description: "Review pull requests from the team.",
+        title: "Pull Request Review",
+        description:
+          "Thoroughly review the team's pull requests to ensure quality code and adherence to project standards.",
         date: "2024-11-14",
         category: "Code Review",
         active: false,
@@ -37,8 +40,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 4",
-        description: "Draft a new workflow diagram.",
+        title: "Workflow Diagram Drafting",
+        description:
+          "Draft a comprehensive workflow diagram to visualize and improve the team's processes and operations.",
         date: "2024-11-18",
         category: "Design",
         active: true,
@@ -56,8 +60,9 @@ const employees = [
     password: "1234",
     tasks: [
       {
-        title: "Task 1",
-        description: "Design the UI for the dashboard.",
+        title: "UI Design for Dashboard",
+        description:
+          "Create an intuitive and visually appealing user interface for the dashboard to enhance user experience.",
         date: "2024-11-14",
         category: "Design",
         active: false,
@@ -66,8 +71,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 2",
-        description: "Test the payment gateway integration.",
+        title: "Payment Gateway Testing",
+        description:
+          "Test the integration of the payment gateway to ensure it functions correctly and handles transactions securely.",
         date: "2024-11-13",
         category: "Testing",
         active: false,
@@ -76,8 +82,9 @@ const employees = [
         failed: true,
       },
       {
-        title: "Task 3",
-        description: "Prepare design assets for marketing.",
+        title: "Design Assets for Marketing",
+        description:
+          "Prepare high-quality design assets for the marketing team to use in upcoming campaigns and promotional materials.",
         date: "2024-11-11",
         category: "Marketing",
         active: true,
@@ -86,8 +93,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 4",
-        description: "Brainstorm ideas for the new product.",
+        title: "Product Brainstorming",
+        description:
+          "Collaborate with the team to brainstorm innovative ideas for the development of a new product.",
         date: "2024-11-19",
         category: "Strategy",
         active: true,
@@ -96,8 +104,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 5",
-        description: "Analyze feedback from user surveys.",
+        title: "User Survey Feedback Analysis",
+        description:
+          "Analyze the feedback gathered from user surveys to identify key areas for improvement in the product.",
         date: "2024-11-12",
         category: "Research",
         active: false,
@@ -115,8 +124,9 @@ const employees = [
     password: "1234",
     tasks: [
       {
-        title: "Task 1",
-        description: "Update the database schema.",
+        title: "Database Schema Update",
+        description:
+          "Update the database schema to accommodate new application requirements while maintaining data integrity.",
         date: "2024-11-12",
         category: "Database",
         active: true,
@@ -125,8 +135,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 2",
-        description: "Prepare a presentation for the client.",
+        title: "Client Presentation Preparation",
+        description:
+          "Prepare a professional and engaging presentation for the client to showcase the project's progress and goals.",
         date: "2024-11-18",
         category: "Presentation",
         active: false,
@@ -135,8 +146,9 @@ const employees = [
         failed: true,
       },
       {
-        title: "Task 3",
-        description: "Optimize database queries.",
+        title: "Query Optimization",
+        description:
+          "Optimize the database queries to improve the system's performance and reduce response time.",
         date: "2024-11-15",
         category: "Optimization",
         active: true,
@@ -154,8 +166,9 @@ const employees = [
     password: "1234",
     tasks: [
       {
-        title: "Task 1",
-        description: "Conduct team meeting.",
+        title: "Team Meeting",
+        description:
+          "Organize and conduct a team meeting to discuss progress, address concerns, and align on upcoming tasks.",
         date: "2024-11-17",
         category: "Management",
         active: true,
@@ -164,8 +177,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 2",
-        description: "Optimize the server response time.",
+        title: "Server Optimization",
+        description:
+          "Analyze and optimize the server response time to ensure faster performance and better scalability.",
         date: "2024-11-15",
         category: "Optimization",
         active: false,
@@ -174,8 +188,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 3",
-        description: "Prepare the monthly performance report.",
+        title: "Monthly Report Preparation",
+        description:
+          "Prepare a detailed monthly performance report to summarize key achievements and areas of improvement.",
         date: "2024-11-20",
         category: "Reporting",
         active: false,
@@ -184,8 +199,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 4",
-        description: "Organize team-building activities.",
+        title: "Team-Building Activities",
+        description:
+          "Plan and organize team-building activities to strengthen team cohesion and improve morale.",
         date: "2024-11-22",
         category: "HR",
         active: true,
@@ -203,8 +219,9 @@ const employees = [
     password: "1234",
     tasks: [
       {
-        title: "Task 1",
-        description: "Write unit tests for new features.",
+        title: "Unit Testing for Features",
+        description:
+          "Develop and execute unit tests for new features to ensure functionality and catch potential bugs early.",
         date: "2024-11-13",
         category: "Testing",
         active: true,
@@ -213,8 +230,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 2",
-        description: "Analyze competitors' market strategies.",
+        title: "Competitor Analysis",
+        description:
+          "Conduct a comprehensive analysis of competitors' strategies to identify opportunities and threats in the market.",
         date: "2024-11-10",
         category: "Research",
         active: false,
@@ -223,8 +241,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 3",
-        description: "Refactor legacy code modules.",
+        title: "Legacy Code Refactoring",
+        description:
+          "Refactor legacy code modules to enhance maintainability, readability, and overall system performance.",
         date: "2024-11-15",
         category: "Development",
         active: true,
@@ -233,8 +252,9 @@ const employees = [
         failed: false,
       },
       {
-        title: "Task 4",
-        description: "Create a script for automated backups.",
+        title: "Backup Script Creation",
+        description:
+          "Develop a reliable script for automating system backups to ensure data security and recovery options.",
         date: "2024-11-18",
         category: "DevOps",
         active: false,
