@@ -44,7 +44,18 @@
    The application will be available at `http://localhost:3000`.
 
 ## Screenshots
-(You can include relevant screenshots of your app)
+- Login Page
+![Login Page](./src/assets/screenshots/Screenshot%20(831).png)
+
+- Admin Dashboard
+![Admin Dashborad](./src/assets/screenshots/Screenshot%20(832).png)
+
+- Employee1 Dashboard
+![Employee Dashboard](./src/assets/screenshots/Screenshot%20(833).png)
+
+- Employee2 Dashboard
+![Employee Dashboard](./src/assets/screenshots/Screenshot%20(834).png)
+
 
 ## Contributing
 Contributions are welcome! Follow these steps to contribute:
@@ -54,6 +65,6 @@ Contributions are welcome! Follow these steps to contribute:
 4. Push your changes and create a Pull Request.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for more details.
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for more details.
 
 ---
